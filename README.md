@@ -135,8 +135,17 @@ def modify_mesh(triangles: torch.Tensor, # num_gaussians x 3 x 3, triangles[:,:,
 function in ```render_video.py``` where 
 * ```triangles``` - pseudomesh, for each gaussian a triangle is defined with 3 points (each with 3 coordinates)
 * ```time``` - timestamp of the frame (between 0 and 1)
- 
 
+
+#### Latest Installation Steps
+```
+conda create -n vegas python=3.8
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
+pip install ninja
+pip install submodules/diff-gaussian-rasterization --no-build-isolation
+pip install submodules/simple-knn --no-build-isolation
+pip install -r requirements.txt
+```
 
 
 ------------------------------------
