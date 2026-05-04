@@ -266,7 +266,7 @@ if __name__ == "__main__":
     parser.add_argument('--gs_type', type=str, default="gs")
     parser.add_argument('--camera', type=str, default="mirror")
     parser.add_argument("--distance", type=float, default=1.0)
-    parser.add_argument("--num_pts", type=int, default=100_000)
+    parser.add_argument("--num_pts", type=int, default=500_000)
     parser.add_argument('--debug_from', type=int, default=-1)
     parser.add_argument('--detect_anomaly', action='store_true', default=False)
     parser.add_argument("--test_iterations", nargs="+", type=int, default=[5_000, 10_000, 15_000, 20_000, 25_000, 30_000])
